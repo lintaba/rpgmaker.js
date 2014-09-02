@@ -1,0 +1,1 @@
+﻿onload:{c:[["showText","Üdvözöllek a földemen, vándor!<br><br>\r\nSzeretném, ha ellátogatnál a barátomhoz, aki innen délkeletre lakik, egy nagy házban.<br>(<small>nyomj entert vagy space-t a folytatáshoz</small>)"],["move",0,["Tr"]]]}

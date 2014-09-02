@@ -1,0 +1,10 @@
+config
+canvas:boolean
+title:string		//<title>
+height:int			//térkép-magasság
+width:int			//térkép-szélesség
+canvasCoord:boolean	//a térképen mutassa-e a koordinátákat
+debug:boolean		//elsõsorban a térképhez használandó debugolás
+scroll:boolean		//scroll-gombok mutatása
+cdxq:boolean		//mozgás kijelzése, naplózása (dives keret és friss koordináták)
+cache:boolean		//a scriptek betöltõdése cache-be kerül, vagy nem

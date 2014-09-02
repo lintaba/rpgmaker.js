@@ -1,0 +1,53 @@
+/* CSS Document */
+
+body{
+background-color:#3cf;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:12px;
+
+}
+#cim{
+	background-image:url(images/logo.jpg);
+	background-position:top right;
+	background-repeat:no-repeat;
+	height:150px;
+background-color:white;
+margin-left:2px;
+width:800px;
+	
+}
+/*van még egy 5px-es margó*/
+#keszites,#tortenet{
+	margin-left:280px;
+	padding:10px 10px 15px 10px;
+	background-color:white;
+	margin-top:5px;
+	text-align:justify;
+	width:502px;
+	}
+img{margin:1px 5px;}
+#tortenet img{float:right;margin-bottom:30px;}
+#keszites img{float:left;}
+#keszites img[x]{
+float:right;
+background-color:#cff;
+padding:3px;
+border:1px solid #00c;
+}
+h1{
+font-size:4em;
+font-variant:small-caps;
+color:#3cf;
+vertical-align:middle;
+padding-left:100px;
+padding-top:30px;
+}
+#info{
+position:absolute;
+top:170px;
+left:10px;
+width:250px;
+padding:10px;
+	background-color:white;
+
+}

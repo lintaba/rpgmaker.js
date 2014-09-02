@@ -1,0 +1,149 @@
+/*window*/
+body{background-color:white;}
+a{color:inherit;}
+.window{
+	position:absolute;
+	-moz-box-shadow:8px 8px 10px #888888;
+	height:auto;
+	-moz-border-radius:2px;
+}
+.locked{
+	-moz-box-shadow:none;
+}
+.window>.lock{
+	display:none;
+}
+.locked>.lock{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:0.2;
+	display:block;
+}
+/*head*/
+.window>.head>.nw>.n>.ne>.closex{
+	background:transparent url(design/ws.png) no-repeat scroll -13px -1px;
+	float:right;
+	width:15px;
+	height:15px;
+	margin-top:2px;
+	cursor:pointer;
+}
+.window>.head>.nw>.n>.ne>.data{
+	color:#333333;
+	top:3px;
+	width:100%;
+	padding-left:3px;
+	font:caption;
+	padding-top:3px;
+	min-height:18px;
+}
+.window>.head>.nw{
+	background:transparent url(design/ws.png) no-repeat scroll 0 0;
+	padding-left:10px;
+	position:relative;
+}
+.window>.head>.nw>.n>.ne{
+	background:transparent url(design/whs.png) repeat-x scroll 0 0;
+	height:18px;
+	overflow:hidden;
+}
+.window>.head>.nw>.n{
+	background:transparent url(design/ws.png) no-repeat scroll right 0;
+	padding-right:10px;
+}
+
+/*content*/
+
+.window>.content>.w{
+	background:transparent url(design/wvs.png) repeat-y scroll right 0;
+	padding-right:5px;
+}
+.window>.content>.w>.e{
+	background:transparent url(design/wvs.png) repeat-y scroll 0 0;
+	padding-left:5px;
+}
+.window>.content>.w>.e>div{
+	overflow:hidden;
+	background-color:#FAFAFF;
+	border-color:#999999 #AAAAAA #AAAAAA #999999;
+	border-style:solid;
+	border-width:1px;
+	padding:2px;;
+}
+
+
+
+/*status*/
+
+.window>.status>.sw{
+background:transparent url(design/ws.png) no-repeat scroll 0 -25px;
+padding-left:5px;
+}
+.window>.status>.sw>.se{
+background:transparent url(design/ws.png) no-repeat scroll right -25px;
+padding-right:5px;
+}
+.window>.status>.sw>.se>.s{
+background:transparent url(design/whs.png) repeat-x scroll 0 -25px;
+height:7px;
+}
+
+.status button{
+font-size:0.6em;
+height:18px;
+margin-left:32px;
+margin-top:-15px;
+}
+.status button.save{
+	color:#006600;
+	font-weight:bold;
+}
+.status button.close{
+	color:#660000;
+	font-weight:bold;
+}
+
+
+.window button{
+	width:80px;
+	background-image:url(design/bt.png);
+	border:none;
+	height:20px;
+	outline:none;
+}
+.window button:hover{
+	background-position:0 -20px;
+}
+.window button:active{
+	background-position:0 -40px;
+}
+
+.window .bt6b button{
+	width:60px;
+	background-position:-79px -0;
+}
+.window .bt6b button:hover{
+	background-position:-79px -20px;
+}
+.window .bt6b button:active{
+	background-position:-79px -40px;
+}
+.window .bt4b button{
+	width:40px;
+	background-position:-139px -0;
+}
+.window .bt4b button:hover{
+	background-position:-139px -20px;
+}
+.window .bt4b button:active{
+	background-position:-139px -40px;
+}
+
+.window button[disabled],.window button[disabled]:hover,.window button[disabled]:active{
+	background-image:url(design/bt.png);
+	background-position:0 0;
+}

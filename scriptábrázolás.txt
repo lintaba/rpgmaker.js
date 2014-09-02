@@ -1,0 +1,52 @@
+//új stílusú adatábrázolás
+{c:[
+	["utasítás","param1","@var1"],
+	["if",["@a","=","$a"],{c:[
+		["alert","true"]
+	},{c:[
+		["alert","false"]
+	]}]],
+	["alert","42"]
+}
+
+utasításblokk
+	{c:[]}
+változó
+	["hatókör","név"]
+logikai kifelyezés
+	["valami",0,[0,0],6,"1",2,[2,1]]
+	["valami","eq",["hatókör","változó"],"OR","1","lt",["hatókör","változó"]]
+	
+	[{
+operandusok
+	0 eq,1 nq,2 lt,3 gt, 4 nlt, 5 ngt,6 OR, 7 AND
+változók
+	hatókör, változó ID, [operátor, érték|[hatókör, változó ID]]
+hatókör[0]
+	0	script-tulaj Targy
+	1	ideiglenes változó, a script futása után törlõdik
+	2	selected Targy
+	3	eseményt kiváltó Targy
+	4[név] egyéb tárgy
+	5	globális(lokálisan tárolva)
+	6	globális(szerrel szinkronizálva)
+	7	SPECIÁLIS
+	8	késöbbi használatra fenntartva
+	9[név] késöbbi használatra fenntartva
+hatókör->speciális[1]
+	0	idõzítõ	
+		[h,m,s]		[2]
+		0:legalább|1:legfeljebb[3]
+	1	arany
+		db[2]
+		0:legalább|1:legfeljebb[3]
+	2	tárgy
+		tárgyID[2]
+	3
+Targy ábrázolás:
+	"ME":hívott objektum (eq ME)
+	"CL":hívó objektum   (eq CL)
+	"PL":játékos   (eq PL)
+	"[0:0]":koord, ahol az objektum van ([0] eq [)
+	1:az objektum azonosító száma (isNumeric)
+	"név":objektum nevére mutat (else)

@@ -1,0 +1,349 @@
+/*scriptEdit*/
+
+/*HEAD*/
+div.scriptEditorWin>.scriptEditorHead{
+	margin:0 0 5px 10px;
+	/*height:50px;*/
+}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>.tabPlace2{
+	width:100%;
+	background-color:#bdc8fd;
+	margin-top:2px;
+	height:1px;
+	margin-left:-12px;
+	padding-right:42px;
+	padding-left:12px;
+	
+}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace{
+	padding:1px 0;
+	border-bottom:1px solid #adb8ed;
+	overflow:visible;
+	margin-left:-12px;
+	padding-right:42px;
+	padding-left:12px;
+	margin-top:5px;
+	height:22px;
+}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a{
+	cursor:pointer;
+	border:1px solid #adb8ed;
+	margin-left:6px;
+	padding:3px 0.5em;
+	text-decoration:none;
+	min-width:40px;
+	max-width:120px;
+	background-color:#CCC;
+}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a:hover{background-color:#EEE;}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a.selected{background-color:#FFF;border-bottom:1px solid white;}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a.selected:hover{background-color:#EEE;}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a.add{background-color:#6A6;}
+div.scriptEditorWin>.scriptEditorHead>.tabPlace>a.add:hover{background-color:#8C8;}
+
+/*LEFT*/
+div.scriptEditorWin>.scriptEditorLeftPanel .ImageSelector{
+	border:2px outset gray;
+}
+div.scriptEditorWin>.scriptEditorLeftPanel .ImageSelector:hover{
+	border:2px outset green;
+}
+div.scriptEditorWin>.scriptEditorLeftPanel .ImageSelector:active{
+	border:2px inset green;
+}
+
+div.scriptEditorWin>.scriptEditorLeftPanel{
+	float:left;
+	height:500px;
+	width:160px;
+	border:2px inset #ADB8ED;
+	padding:2px;
+	margin-right:2px;
+	float:left;
+	background-image:url(design/script.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	overflow:hidden;
+}
+div.scriptEditorWin>.scriptEditorLeftPanel .leftNotes{
+	width:100%;
+	height:100px
+}
+/*RIGHT*/
+/*RIGHT.TOP*/
+
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber{
+	border-bottom:2px solid #606683;
+	height:14px;
+	width:392px;
+	margin-left:170px;
+	margin-bottom:0;
+	overflow:visible;
+	padding:1px 12px 1px 3px;
+	font:caption;
+}
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber>a{
+	cursor:pointer;
+	background-color:#CCCCCC;
+	border:2px outset #606683;
+	border-bottom:2px solid #606683;
+	margin-left:2px;
+	max-width:120px;
+	min-width:40px;
+	padding:1px 0.2em;
+	text-decoration:none;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber>a.disabled{
+	font-style:italic;
+	color:gray;
+}
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber>a.notempty{
+	-text-shadow:#00F 0px 0px 8px;
+	font-weight:bold;
+}
+
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber>a.sel{
+	background-color:#FFFFFF;
+	border-bottom:2px solid white;
+	padding-bottom:2px;
+	color:red;
+}
+
+div.scriptEditorWin>.scriptEditorScriptHead>.scriptTabber>a:hover{
+	text-decoration:underline;
+}
+/*RIGHT.CONTENT*/
+.scriptsorInsert{
+	font-weight:bold;
+}
+.scriptsorInsert:hover{
+	background-color:#AFA;
+}
+.scriptsor,.scriptsorOver,.scriptsorInsert,.scriptsorSep{
+	min-height:10px;
+	cursor:default;
+	padding-left:5px;
+	max-width:100%;
+	white-space:nowrap;
+	font-family:"Courier new";
+}
+.scriptsorOver{
+	background-color:#DDD;
+}
+.scriptsorOver>div>.post,.scriptsorOver>div>div>.post{
+	font-weight:bold;
+	color:red;
+}
+
+/*RIGHT.LINE*/
+.cIL0{
+	color:purple;
+}
+.cIL0:before{
+	content:'"';
+}
+.cIL0:after{
+	content:'"';
+}
+.cIL1{
+	color:forestgreen;
+}
+.cIL2{
+	color:aqua;
+}
+.scriptsorInsert{
+	color:darkgreen;
+	font-weight:bold;
+}
+.scriptEditorScript{
+	overflow:auto;
+	background-color:white;
+	height:504px;
+	width:404px;
+	margin-right:2px;
+	margin-top:0px;
+	border:2px inset #ADB8ED;
+	border-top-width:0px;
+	font-family:"verdana";
+	font-size:14px;
+	overflow:auto;
+}
+.cIL1{
+	font-weight:bold;
+}
+
+
+/*INSERT*/
+#commandList>button{
+	width:80px;
+}
+#commandList{
+-moz-column-count: 2;
+-moz-column-gap: 2px;
+-webkit-column-count: 2;
+-webkit-column-gap: 2px;
+}
+
+/*EDIT*/
+
+.leftEditorMenuList button{
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+
+/*CHIPSET EDITOR*/
+.mapEditor{
+	background-color:#EEE;
+	border:1px solid #AAA;
+	padding:3px;
+	overflow:auto;
+	height:100%;
+	width:100%;
+}
+.mapEditor select{
+	width:256px;
+	margin-bottom:2px;
+}
+
+.mapEditor>.chipTable>div{
+	position:absolute;
+	height:32px;
+	width:32px;
+	display:inline;
+	overflow:visible;
+}
+.mapEditor>.jobb>div{
+	height:37px;
+	width:38px;
+	position:relative;
+	border:2px outset #000;
+	margin-bottom:4px;
+	margin-left:2px;
+	margin-right:2px;
+}
+.mapEditor>.jobb>.down,.mapEditor>.jobb>.downed{
+	border:2px inset #000;
+}
+.mapEditor>.jobb{
+	float:right;
+	border:1px solid #999;
+	height:630px;
+	width:46px;
+	background-color:#DDD;
+	top:5px;
+	position:static;
+	margin-right:5px;
+}
+.mapEditor>.chipTable{
+	height:600px;
+	width:256px;
+}
+.mapEditor>.chipTable>.selran{
+	height:0;
+	width:0;
+}
+.mapContainer>.editorDivOnMap{
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	position:absolute;
+	z-index:100;
+	-moz-user-focus: ignore;
+	-moz-user-input: disabled;
+	-moz-user-select: none;
+}
+
+.insetTargyDivList{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+.insetTargyDivList>div{
+	height:16px;
+	width:44px;
+	margin-right:3px;
+	border:2px outset gray;
+	display:inline-block;
+	background-image:url("design/insertIcons.png");
+	padding-top:28px;
+	text-align:center;
+	font-size:11px;
+	cursor:pointer;
+	overflow:hidden;
+}
+.insetTargyDivList>div:hover{
+	border:2px inset gray;
+}
+.jarhatoReteg>div>div{
+	position:absolute;
+}
+
+.terkepNyilak{
+	position:fixed;
+	left:100px;
+	top:30px;
+}
+.terkepNyilak>div{
+	height:32px;
+	width:32px;
+	position:absolute;
+	background-image:url("design/nyil.png");
+	cursor:pointer;
+}
+.terkepNyilak>.l{
+	background-position:top left;
+}
+.terkepNyilak>.r{
+	background-position:top right;
+}
+.terkepNyilak>.t{
+	background-position:bottom left;
+}
+.terkepNyilak>.b{
+	background-position:bottom right;
+}
+
+.editChipset{
+	height:600px;
+	width:256px;
+	position:absolute;
+	top:46px;
+	left:0;
+}
+.editChipset>div{
+	height:32px;
+	width:32px;
+	position:absolute;
+	text-align:center;
+	padding-top:10px;
+}
+.editChipset>.a{
+	background-color:rgba(255,255,255,0.1);
+	cursor:pointer;
+}
+.editChipset>.a:hover{
+	background-color:rgba(255,255,255,0.5);
+	
+}
+.editChipset>.b>div{
+	background-image:url("design/jar.png");
+	position:absolute;
+	cursor:pointer;
+}
+
+.setImageLeftList{
+	float:left;
+	height:255px;
+	width:160px;
+	overflow:hidden;
+}
+
+.setImageLeftList>select{
+	width:160px;
+	height:255px;
+}

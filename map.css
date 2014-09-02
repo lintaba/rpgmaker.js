@@ -1,0 +1,35 @@
+.mapContainer{
+	left:100px;
+	overflow:hidden;
+	position:fixed;
+	top:30px;
+}
+div.mapArea{
+	/*height:768px;
+	width:1024px;*/
+	left:0;
+	position:absolute;
+	top:0;
+}
+div.mapArea>div{
+	height:32px;
+	overflow:hidden;
+	position:absolute;
+	width:32px;
+}
+div.mapArea>div>div{
+	height:16px;
+	width:16px;
+	overflow:hidden;
+	position:absolute;
+}
+div.mapArea>.message{
+	z-index:100;
+	overflow:visible;
+	height:auto;
+	width:auto;
+	font-family:nad;
+	font-size:13;
+	text-shadow:1px 1px 0 white;
+	color:black;
+}

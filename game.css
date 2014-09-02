@@ -1,0 +1,113 @@
+div.layer>div#l5>div{
+	position:absolute;
+}
+div.gameCell{
+	height:32px;
+	width:32px;	
+	position:absolute;
+}
+div.gameCell>div{
+	position:absolute;
+	height:16px;
+	width:16px;
+}
+#keret{
+	position:fixed;
+	left:100px;
+	top:30px;
+	width:640px;
+	height:480px;
+	background-image:url(bg/003-StarlitSky01.jpg);
+	overflow:hidden;
+}
+#layer{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1024px;
+	height:768px;
+}
+#layer div div div{
+	height:16px;
+	width:16px;
+	background-color:orange;
+}
+#layer div div{
+	position:absolute;
+	height:32px;
+	width:32px;
+	overflow:hidden;
+}
+#l0{z-index:20;/*/térkép1/*/}
+#l1{z-index:30;/*/térkép2/*/}
+#l2{z-index:40;/*/térkép3/*/}
+#l3{z-index:50;/*/térkép4/*/}
+#l4{z-index:60;/*/térkép5/*/}
+#l5{z-index:70;/*/effects/*/}
+#l6{z-index:80;/*/járhatóság/*/}
+#l7{z-index:90;/*/egyéb/*/}
+#l8{z-index:100;/*/egyéb/*/}
+#l9{z-index:110;/*/egyéb/*/}
+#msg{
+	z-index:100;
+	width:610px;
+	top:340px;
+	margin:auto;
+	padding:10px;
+	padding-top:5px;
+	position:relative;
+	height:115px;
+	background-color:#02138B;
+	opacity:0.8;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:3px solid blue;
+	color:#CCC;
+	font-weight:bold;
+	font-family:"Georgia";
+	font-size:1.1em;
+	overflow:hidden;
+
+}
+#msg .input{
+	display:block;
+	color:#AAA;
+	font-weight:bold;
+	font-family:"Georgia";
+	font-size:1.1em;
+	background-color:#22339A;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:400px;
+	margin-top:10px;
+	border:3px solid white;
+	padding:3px;
+}
+#msg .selectable{
+	color:#FFF;
+	opacity:1;
+	padding-left:5px;
+	cursor:pointer;
+	background-color:#02137A;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	margin-top:2px;
+	position:static;
+}
+#msg .selected{
+	color:#DDF;
+	background-color:#639;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+/*div{
+	position:absolute;
+}*/
+
+.selran div{
+	background-color:red;
+	position:absolute;
+	height:2px;
+	width:2px;
+	z-index:200;
+}

@@ -1,0 +1,1 @@
+﻿loadedMapHeight:0,loadedMapWidth:0,loadWhenBorder:2,gameName:"Demó játék"
